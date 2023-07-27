@@ -1,0 +1,247 @@
+@font-face {
+    font-family: 'Shantell Sans', cursive;
+    src: url(../fonts/ShantellSans-VariableFont_BNCE\,INFM\,SPAC\,wght.ttf);
+}
+
+@keyframes loading {
+    0% {
+        transform: scale(0.1);
+        opacity: 0;
+    }
+
+    60% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.container {
+    font-size: 50px;
+    margin-top: 100px;
+    letter-spacing: 10px;
+    position: absolute;
+    top: 150px;
+    left: 560px;
+    font-family: 'Shantell Sans', cursive;
+
+}
+
+body img {
+    width: 1535px;
+    height: 760px;
+    position: relative;
+}
+
+.title-letter {
+    animation: color-animation 2s linear infinite;
+
+
+}
+
+
+
+.title-letter-1 {
+    --color-1: #DF8453;
+    --color-2: #3D8DAE;
+    --color-3: #E4A9A8;
+}
+
+
+.title-letter-2 {
+    --color-1: #DBAD4A;
+    --color-2: #ACCFCB;
+    --color-3: #17494D;
+}
+
+.title-letter-3 {
+    --color-1: #ACCFCB;
+    --color-2: #E4A9A8;
+    --color-3: #ACCFCB;
+}
+
+.title-letter-4 {
+    --color-1: #3D8DAE;
+    --color-2: #DF8453;
+    --color-3: #E4A9A8;
+}
+
+.title-letter-5 {
+    --color-1: #E4A9A8;
+    --color-2: #ACCFCB;
+    --color-3: #3D8DAE;
+}
+
+.title-letter-6 {
+    --color-1: #DBAD4A;
+    --color-2: #ACCFCB;
+    --color-3: #17494D;
+}
+
+.title-letter-7 {
+    --color-1: #ACCFCB;
+    --color-2: #E4A9A8;
+    --color-3: #ACCFCB;
+}
+
+
+
+
+@keyframes color-animation {
+    0% {
+        color: var(--color-1)
+    }
+
+    32% {
+        color: var(--color-1)
+    }
+
+    33% {
+        color: var(--color-2)
+    }
+
+    65% {
+        color: var(--color-2)
+    }
+
+    66% {
+        color: var(--color-3)
+    }
+
+    99% {
+        color: var(--color-3)
+    }
+
+    100% {
+        color: var(--color-1)
+    }
+}
+
+
+
+
+@keyframes loading {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: yellow;
+        left: 200px;
+        top: 0px;
+    }
+
+    50% {
+        background-color: blue;
+        left: 200px;
+        top: 200px;
+    }
+
+    75% {
+        background-color: green;
+        left: 0px;
+        top: 200px;
+    }
+
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+}
+  
+  .loader {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0; left: 0;
+    display: flex;
+    align-items: center;
+    align-content: center; 
+    justify-content: center;  
+    display: absolute;
+  }
+  
+  .loader__element {
+    border-radius: 100%;
+    border: 5px solid rgb(230, 18, 245);
+    margin: 10px;
+  }
+  
+  .loader__element:nth-child(1) {
+    animation: preloader .6s ease-in-out alternate infinite;
+  }
+  .loader__element:nth-child(2) {
+    animation: preloader .6s ease-in-out alternate .2s infinite;
+  }
+  
+  .loader__element:nth-child(3) {
+    animation: preloader .6s ease-in-out alternate .4s infinite;
+  }
+  
+  @keyframes preloader {
+    100% { transform: scale(2); }
+  }
+
+
+
+
+
+button {
+    animation: wiggle 2s linear infinite;
+  }
+
+  button {
+    position: absolute;
+    left: 700px;
+    top: 500px;
+    height: 80px;
+    width: 150px;
+    background: rgb(175, 20, 177);
+    background: linear-gradient(top, #555, #333);
+    border: none;
+    border-top: 10px solid rgb(149, 13, 40);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: #fff;
+    font-family: Helvetica, Arial, Sans-serif;
+    font-size: 20px;
+    transform-origin: 50% 5em;
+    cursor: pointer;
+  }
+  
+  @keyframes wiggle {
+    0%, 10% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
+
+
+
+
+
+
+
